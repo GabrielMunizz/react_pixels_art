@@ -2,11 +2,12 @@ import * as S from '../styles/style';
 import React, { useState } from 'react';
 import Line from './Line';
 import PickColor from './PickColor';
+import Swal from 'sweetalert2'
 
 const Board = () => {
   const [length, setLength] = useState<string>('5');
   const [inputValue, setInputValue] = useState<string>('');  
-  const convertedLength = Number(length);
+  const convertedLength = Number(length);  
 
   const column = [];
   while(column.length < convertedLength) {
@@ -20,7 +21,7 @@ const Board = () => {
     setLength(inputValue);
     if (inputValue === '' || inputValue > '20') {
       setLength('5');
-      // instalar sweetAlert a adicionar alerta para usuario colocar valores entre 5 e 20
+      Swal.fire('Please, insert a number between 5 and 20.');
     } 
     setInputValue('');
   }

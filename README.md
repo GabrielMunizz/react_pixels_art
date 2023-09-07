@@ -28,24 +28,19 @@ O Pixels Art é um projeto React desenvolvido em TypeScript que permite aos usu�
 ## Como Executar o Projeto Localmente
 Clone o repositório:
 
-bash
-Copy code
-git clone https://github.com/seu-usuario/pixels-art.git
+- git clone https://github.com/seu-usuario/pixels-art.git
 Navegue até o diretório do projeto:
 
-bash
-Copy code
-cd pixels-art
+
+- cd pixels-art
 Instale as dependências:
 
-bash
-Copy code
-npm install
+
+- npm install
 Inicie o servidor de desenvolvimento:
 
-bash
-Copy code
-npm start
+
+- npm start
 O projeto estará disponível em http://localhost:3000 no seu navegador.
 
 ### Contribuição

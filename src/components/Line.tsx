@@ -1,5 +1,6 @@
 import * as S from '../styles/style';
 import Pixel from './Pixel';
+import uuid from 'react-uuid';
 
 type LineProps = {
   length: string;
@@ -11,7 +12,7 @@ const Line = ({length}: LineProps) => {
 
   const pixels = []  
   while(pixels.length < convertedLength) {
-    pixels.push(<Pixel color={ color } />);    
+    pixels.push(<Pixel key={ uuid() } color={ color } />);    
   }
   return(
     <S.Line>

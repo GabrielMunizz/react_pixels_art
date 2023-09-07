@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Line from './Line';
 import PickColor from './PickColor';
 import Swal from 'sweetalert2'
+import uuid from 'react-uuid';
 
 const Board = () => {
   const [length, setLength] = useState<string>('5');
@@ -11,7 +12,7 @@ const Board = () => {
 
   const column = [];
   while(column.length < convertedLength) {
-    column.push(<Line length={length} />);
+    column.push(<Line key={ uuid() } length={length} />);
   }
   const handleChange = ({target}: React.ChangeEvent<HTMLInputElement>) => {
     setInputValue(target.value);

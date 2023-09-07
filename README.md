@@ -23,6 +23,7 @@ O Pixels Art √© um projeto React desenvolvido em TypeScript que permite aos usu√
 # Tecnologias Utilizadas
 - React
 - TypeScript
+- Styled-Components
 
 
 ## Como Executar o Projeto Localmente

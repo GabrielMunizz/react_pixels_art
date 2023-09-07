@@ -16,7 +16,7 @@ O Pixels Art é um projeto React desenvolvido em TypeScript que permite aos usu�
 
 - Pinte o Quadro: Clique em um pixel no quadro para pintá-lo com a cor selecionada.
 
-- Troque as Cores: Clique no botão "Trocar Cores" para substituir as cores pré-selecionadas por novas cores aleatórias.
+- Troque as Cores: Clique no botão "Random colors!" para substituir as cores pré-selecionadas por novas cores aleatórias.
 
 - Crie sua Obra de Arte: Use sua criatividade para criar desenhos pixelados incríveis!
 

@@ -1,6 +1,7 @@
 import * as S from '../styles/style';
 
 type PixelProps = {
+  id: string,
   color: string,
 }
 

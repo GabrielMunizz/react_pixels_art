@@ -12,7 +12,7 @@ const Line = ({length}: LineProps) => {
 
   const pixels = []  
   while(pixels.length < convertedLength) {
-    pixels.push(<Pixel key={ uuid() } color={ color } />);    
+    pixels.push(<Pixel key={ uuid() } id={ uuid() } color={ color } />);    
   }
   return(
     <S.Line>

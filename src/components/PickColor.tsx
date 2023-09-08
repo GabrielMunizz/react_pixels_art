@@ -2,6 +2,7 @@ import Pixel from './Pixel';
 import * as S from '../styles/style';
 import { useState } from 'react';
 import { randomColors } from '../utils/functions';
+import uuid from 'react-uuid';
 
 const PickColor = () => {  
   const initialColors = ['#000'];
@@ -12,7 +13,7 @@ const PickColor = () => {
     colors.push(randomColors());
   } 
 
-  const handleCLick = () => {
+  const handleClick = () => {
     const newColors = initialColors
     while (newColors.length <= i) {
       newColors.push(randomColors());
@@ -21,8 +22,8 @@ const PickColor = () => {
   }
   return(
     <S.PickColor>
-      {colors.map((color, index) => <Pixel key={index} color={ color } />)}
-      <S.Button onClick={ handleCLick }>Random Colors!</S.Button>
+      {colors.map((color) => <Pixel key={ uuid() } id={ uuid() } color={ color } />)}
+      <S.Button onClick={ handleClick }>Random Colors!</S.Button>
     </S.PickColor>
   )
 }

@@ -14,7 +14,8 @@ const Board = () => {
   while(column.length < convertedLength) {
     column.push(<Line key={ uuid() } length={length} />);
   }
-  const handleChange = ({target}: React.ChangeEvent<HTMLInputElement>) => {
+
+  const handleChange = ({target}: React.ChangeEvent<HTMLInputElement>) => {    
     setInputValue(target.value);
   }
 
@@ -26,6 +27,7 @@ const Board = () => {
     } 
     setInputValue('');
   }
+
   return(
     <S.Main>      
       <S.InputContainer>

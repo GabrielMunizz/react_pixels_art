@@ -5,20 +5,17 @@ import { useState } from 'react';
 import BGColorContext from './context/BGColorContext';
 
 function App() {
-  const [selectedColor, setSelectedColor] = useState('');
-
-  // função para selecionar a cor e colocar no contexto global
+  const [selectedColor, setSelectedColor] = useState('#000');
+  
   const handleSelectedColor = (color: string) => {
     if (selectedColor !== '') {
-      setSelectedColor('');
+      setSelectedColor('#000');
     }
     setSelectedColor(color);
-  }
-
-  console.log(selectedColor);
+  }  
   return (
     <>  
-       <BGColorContext.Provider value={ { backgroundColor: selectedColor, handleSelectedColor } }>
+       <BGColorContext.Provider value={ { backgroundColor: selectedColor, handleSelectedColor, board: [] } }>
         <GlobalStyle />
         <S.Header>
           <h1>Pixels ART</h1>

@@ -1,11 +1,13 @@
 import * as S from '../styles/style';
 
+
 type PixelProps = {
   id: string,
-  color: string,
+  color: string,  
 }
 
-const Pixel = ({ color }: PixelProps) => {
+const Pixel = ({ color }: PixelProps) => {  
+
   return(
     <S.Pixel style={{ backgroundColor: color }}></S.Pixel>
   )

@@ -70,6 +70,13 @@ export const Pixel = styled.div`
   background-color: #fff;
 `
 
+export const AsidePixel = styled.div`
+  width: 60px;
+  height: 60px;
+  border: 1px solid #000;
+  background-color: #fff;
+`
+
 export const PickColor = styled.aside`
   display: flex;
   flex-direction: column;

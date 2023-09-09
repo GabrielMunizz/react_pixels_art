@@ -66,6 +66,12 @@ export const Line = styled.div`
 export const Pixel = styled.div`
   width: 60px;
   height: 60px;
+  border: 1px solid #000;  
+`
+
+export const AsidePixel = styled.div`
+  width: 60px;
+  height: 60px;
   border: 1px solid #000;
   background-color: #fff;
 `

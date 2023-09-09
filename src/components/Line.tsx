@@ -6,14 +6,13 @@ type LineProps = {
   length: string;
 }
 
-const Line = ({length}: LineProps) => {
+const Line = ({length}: LineProps) => {  
   const convertedLength = Number(length);  
 
   const pixels = []  
   while(pixels.length < convertedLength) {
-    pixels.push(<Pixel key={ uuid() }/>);    
-
-  }
+    pixels.push(<Pixel key={ uuid() }/>);
+  }  
   
   return(
     <S.Line>

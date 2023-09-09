@@ -2,9 +2,9 @@ import { createContext } from 'react';
 
 type BGColorType = {
   backgroundColor: string,
-  handleSelectedColor: (color: string) => void,
+  handleSelectedColor: (color: string) => void,  
   board: {
-    id: string,
+    id: number,
     backgroundColor: string
   }[],  
 };

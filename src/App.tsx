@@ -12,10 +12,10 @@ function App() {
       setSelectedColor('#000');
     }
     setSelectedColor(color);
-  }  
+  } 
   return (
     <>  
-       <BGColorContext.Provider value={ { backgroundColor: selectedColor, handleSelectedColor, board: [] } }>
+       <BGColorContext.Provider value={ { backgroundColor: selectedColor, handleSelectedColor, board: []} }>
         <GlobalStyle />
         <S.Header>
           <h1>Pixels ART</h1>

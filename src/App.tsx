@@ -5,8 +5,8 @@ import { useState } from 'react';
 import BGColorContext from './context/BGColorContext';
 
 function App() {
-  const [selectedColor, setSelectedColor] = useState('#000');
-  
+  const [selectedColor, setSelectedColor] = useState('#000'); 
+
   const handleSelectedColor = (color: string) => {
     if (selectedColor !== '') {
       setSelectedColor('#000');

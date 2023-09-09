@@ -1,24 +1,19 @@
-import { useContext } from 'react';
+import { useState, useContext } from 'react';
 import BGColorContext from '../context/BGColorContext';
 import * as S from '../styles/style';
-import { useState } from 'react';
 
-
-type PixelProps = {
-  id: string,
-}
-
-const Pixel = ({ id }: PixelProps) => {
-  const [ color, setColor ] = useState('#fff');
+const Pixel = () => { 
   const bgContext = useContext(BGColorContext);
   const { backgroundColor } = bgContext;
+  const [color, setColor] = useState('#fff');
+  const id = Math.floor(Math.random() * 400 + 2);
 
-  const handleBG = (thisPixelId: string) => {
-    thisPixelId === id ? setColor(backgroundColor) : false;
+  const handleBg = (thisId: number) => {
+    thisId === id ? setColor(backgroundColor) : false;
   }
 
   return(
-    <S.Pixel style={{ backgroundColor: color }} onClick={ () => handleBG(id) }></S.Pixel>
+    <S.Pixel style={{ backgroundColor: color }} onClick={ () => handleBg(id) } ></S.Pixel>
   )
 }
 

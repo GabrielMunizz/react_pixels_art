@@ -25,9 +25,8 @@ const Board = () => {
       setLength('5');
       Swal.fire('Please, insert a number between 5 and 20.');
     } 
-    setInputValue('');
+    setInputValue('');    
   }
-
   return(
     <S.Main>      
       <S.InputContainer>
